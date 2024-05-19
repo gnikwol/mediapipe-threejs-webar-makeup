@@ -1,9 +1,20 @@
-# Vue 3 + TypeScript + Vite
+# Vue3, Three.js, Mediapipe で AR メイクアップを作るサンプル
+yarn で管理しているので yarn をインストールしてください。
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## セットアップ
+package.json と同じ階層で以下のコマンドを実行してください。依存するライブラリがインストールされます。
+```
+yarn
+```
 
-## Recommended Setup
+## ローカルでの起動方法
+以下のコマンドを実行するとローカルで動かせます。デフォルトだと http://localhost:5173 に公開されます。
+```
+yarn dev
+```
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
-
-- Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
+## ビルド
+以下のコマンドを実行すると ./dist にビルドされた静的ファイルが出力されます。
+```
+yarn build
+```
